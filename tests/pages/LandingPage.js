@@ -30,12 +30,6 @@ export class LandingPage {
       .click();
   }
 
-  async toastMessage() {
-    await expect(this.page.locator(".toast")).toHaveText(
-      /nossa equipe entrará em contato!/,
-    );
-  }
-
   async alertMessage(target) {
     await expect(this.page
   .locator('.alert'))
